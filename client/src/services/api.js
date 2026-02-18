@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://freelance-marketplace-bxi4.onrender.com//api"
+    baseURL: "https://freelance-marketplace-bxi4.onrender.com/api"
 });
 
 api.interceptors.request.use((config) => {
