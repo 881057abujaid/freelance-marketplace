@@ -18,7 +18,11 @@ const server = http.createServer(app);
 
 export const io = new Server(server, {
     cors: {
-        origin: "*",
+        origin: [
+            "http://localhost:5173",
+            "https://freelance-marketplace-three-rho.vercel.app/"
+        ],
+        methods: ["GET", "POST"],
     },
 });
 
